@@ -50,7 +50,11 @@ typedef NS_ENUM(NSInteger, VRVIUMPMovieTimeOption) {
 #pragma mark VRVIUMediaPlayback
 
 @protocol VRVIUMediaPlayback <NSObject>
-
+// add by felix 2018.4.24
+#if defined(__APPLE__)
+- (CVPixelBufferRef)getCurFrame;
+#endif
+// add end
 - (void)prepareToPlay;
 - (void)play;
 - (void)pause;
@@ -58,6 +62,8 @@ typedef NS_ENUM(NSInteger, VRVIUMPMovieTimeOption) {
 - (BOOL)isPlaying;
 - (void)shutdown;
 - (void)setPauseInBackground:(BOOL)pause;
+
+
 
 @property(nonatomic, readonly)  UIView *view;
 @property(nonatomic)            NSTimeInterval currentPlaybackTime;
@@ -84,6 +90,7 @@ typedef NS_ENUM(NSInteger, VRVIUMPMovieTimeOption) {
 
 @property (nonatomic) float playbackRate;
 @property (nonatomic) float playbackVolume;
+
 
 - (UIImage *)thumbnailImageAtCurrentTime;
 

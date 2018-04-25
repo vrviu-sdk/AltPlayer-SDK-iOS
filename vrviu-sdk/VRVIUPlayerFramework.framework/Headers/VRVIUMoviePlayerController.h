@@ -69,7 +69,11 @@ typedef enum VRVIULogLevel {
 - (id)initWithMoreContentString:(NSString *)aUrlString
                  withOptions:(VRVIUOptions *)options
                   withGLView:(UIView<VRVIUSDLGLViewProtocol> *)glView;
-
+// add by felix 2018.4.24
+#if defined(__APPLE__)
+- (CVPixelBufferRef)getCurFrame;
+#endif
+// add end
 - (void)prepareToPlay;
 - (void)play;
 - (void)pause;
@@ -82,6 +86,8 @@ typedef enum VRVIULogLevel {
 - (BOOL)isVideoToolboxOpen;
 
 - (void)setHudValue:(NSString *)value forKey:(NSString *)key;
+
+
 
 + (void)setLogReport:(BOOL)preferLogReport;
 + (void)setLogLevel:(VRVIULogLevel)logLevel;

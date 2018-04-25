@@ -23,7 +23,7 @@ struct VRVIUOverlay {
     int sar_den;
     CVPixelBufferRef pixel_buffer;
     // add by felix
-    int is_enable_mapping;
+    //int is_enable_mapping;
     // add end 2018.4.11
 };
 
