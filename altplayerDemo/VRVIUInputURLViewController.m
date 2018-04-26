@@ -23,7 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    NSString *strurl = @"http://120.77.204.104:38666/20000.flv";
+    self.textView.text = strurl;//
 }
 
 - (void)onClickPlayButton {
