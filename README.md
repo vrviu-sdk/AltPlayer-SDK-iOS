@@ -64,9 +64,9 @@ Demo工程目录如下，打开xcodeproj文件即可
 ```objc
 VRVIUOptions *options = [VRVIUOptions optionsByDefault];
 self.player=[[VRVIUMoviePlayerController alloc] initWithContentURL:self.url withOptions:options];
-[options setPlayerOptionValue:@"vrviu_test_access_key@1234" forKey:@"access_key"]; [optins setPlayerOptionValue:@"vrviu_test_access_key_id" forKey:@"access_key_id"];
-[options setPlayerOptionValue:@"vrviu_test_user" forKey:@"app_id"];
-[options setPlayerOptionValue:@"vrviu_test_user" forKey:@"biz_id"];
+[options setPlayerOptionValue:@"223f291ef5651aa67962fb3680e88155" forKey:@"access_key"]; [optins setPlayerOptionValue:@"5f7df86051449cf8712e4bd46de7febc" forKey:@"access_key_id"];
+[options setPlayerOptionValue:@"vrviu_altsdk" forKey:@"app_id"];
+[options setPlayerOptionValue:@"altsdk_test" forKey:@"biz_id"];
 [options setPlayerOptionValue:@"vrviu_sdk_base_ios_1_0" forKey:@"sdk_version"];
 self.player.view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
 self.player.view.frame = self.view.bounds;
