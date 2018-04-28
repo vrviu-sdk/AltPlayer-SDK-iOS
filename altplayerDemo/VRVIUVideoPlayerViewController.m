@@ -55,10 +55,10 @@
     
 
     VRVIUOptions *options = [VRVIUOptions optionsByDefault];
-    [options setPlayerOptionValue:@"87ab4019c7f624c0310b5c52f1c76419" forKey:@"access_key"];
-    [options setPlayerOptionValue:@"c832b744e6983a8df217f8af27f1395f" forKey:@"access_key_id"];
+    [options setPlayerOptionValue:@"dcb0af5f194f410796452a1644132f03" forKey:@"access_key_id"];
+    [options setPlayerOptionValue:@"a2fe8f5e4767e6c3dca8beb9b410f17a" forKey:@"access_key"];
     [options setPlayerOptionValue:@"vrviu_altsdk" forKey:@"app_id"];
-    [options setPlayerOptionValue:@"altsdk_demo" forKey:@"biz_id"];
+    [options setPlayerOptionValue:@"altsdk_alpha" forKey:@"biz_id"];
     
 
     self.player = [[VRVIUMoviePlayerController alloc] initWithContentURL:self.url withOptions:options];

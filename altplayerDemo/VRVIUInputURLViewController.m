@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *strurl = @"http://120.77.204.104:38666/20000.flv";
+    NSString *strurl = @"http://rs1-pl.vrviu.com/live/vrviu_altsdk.flv?auth_key=1540277586-0-0-becf2e8ef7e862620b469c573e420a25";
     self.textView.text = strurl;//
 }
 
